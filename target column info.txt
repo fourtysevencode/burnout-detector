@@ -1,0 +1,57 @@
+Columns to consider for burnout score
+
+Do you feel emotionally drained from your work or studies
+
+Never → 0
+
+Rarely → 2
+
+Sometimes → 5
+
+Often → 7
+
+Always → 10
+
+Do you feel exhausted even after getting enough rest
+
+Never → 0
+
+Rarely → 2
+
+Sometimes → 5
+
+Often → 7
+
+Always → 10
+
+Do you find it difficult to concentrate and stay motivated lately
+
+No → 0
+
+Sometimes → 5
+
+Yes → 10
+
+Do you feel disconnected from your work/studies etc
+
+No → 0
+
+Sometimes → 5
+
+Yes → 10
+
+Do you actually like studying or working
+
+Yes → -2 (slightly reduces burnout)
+
+No → 2
+
+Depends/Kinda/Sometimes → 1
+
+Burnout calculation formula (simple weighted average)
+burnout_level = (emotional_drain + exhausted_after_rest + concentration_difficulty + disconnection + dislike_factor) / max_possible_score * 10
+
+
+We can simplify for now by just adding the scores and scaling to 10 if necessary.
+
+The “dislike factor” adjusts slightly based on enjoyment.
